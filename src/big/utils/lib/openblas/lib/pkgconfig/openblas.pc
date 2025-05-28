@@ -1,0 +1,13 @@
+libdir=./install/lib
+libsuffix=
+includedir=./install/include
+openblas_config= USE_64BITINT= DYNAMIC_ARCH= DYNAMIC_OLDER= NO_CBLAS= NO_LAPACK= NO_LAPACKE= NO_AFFINITY=1 USE_OPENMP= C908V MAX_THREADS=80
+version=0.3.21.dev
+extralib=-lm -lpthread -lm
+Name: openblas
+Description: OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version
+Version: ${version}
+URL: https://github.com/xianyi/OpenBLAS
+Libs: -L${libdir} -lopenblas${libsuffix}
+Libs.private: ${extralib}
+Cflags: -I${includedir}

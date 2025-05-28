@@ -1,0 +1,14 @@
+prefix=/home/haohaibo/work/freetype-2.10.1/out
+exec_prefix=/home/haohaibo/work/freetype-2.10.1/out
+libdir=/home/haohaibo/work/freetype-2.10.1/out/lib
+includedir=/home/haohaibo/work/freetype-2.10.1/out/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 23.1.17
+Requires:
+Requires.private: 
+Libs: -L${libdir} -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2
