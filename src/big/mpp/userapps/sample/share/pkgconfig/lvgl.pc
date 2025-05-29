@@ -1,4 +1,4 @@
-prefix="/builds/maix_sw/k230_sdk/src/big/mpp/userapps/sample/sample_lvgl/../"
+prefix="/home/keefer/k230_sdk/src/big/mpp/userapps/sample/sample_lvgl/../"
 includedir="${prefix}/include/lvgl"
 libdir=${prefix}/lib
 
