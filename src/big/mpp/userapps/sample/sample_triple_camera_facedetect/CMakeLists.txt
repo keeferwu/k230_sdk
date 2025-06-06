@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.2)
+cmake_minimum_required(VERSION 3.5)
 include(../../../../nncase/examples/cmake/Riscv64.cmake)
 
 project(sample_triple_camera_facedetect C CXX)

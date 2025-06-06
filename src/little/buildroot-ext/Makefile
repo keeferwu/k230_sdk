@@ -44,6 +44,8 @@ define COPYFILES
 		tar --no-same-owner -zxf $(BRW_FILE) -C $(BRW_ROOT); \
 		if [ "'ls $(BRW_PATCH_DIR)/*.patch'" != "" ]; then \
 			$(BRW_DIR)/support/scripts/apply-patches.sh $(BRW_DIR) $(BRW_PATCH_DIR); \
+			echo "LZO_CONF_OPTS += -DCMAKE_POLICY_VERSION_MINIMUM=3.5" >> $(BRW_DIR)/package/lzo/lzo.mk; \
+			echo "LIBUBOOTENV_CONF_OPTS += -DCMAKE_POLICY_VERSION_MINIMUM=3.5" >> $(BRW_DIR)/package/libubootenv/libubootenv.mk; \
 		fi; \
 	fi; \
 
