@@ -48,3 +48,16 @@ fi
 
 ./sharefs &
 cd -
+
+ifconfig etho up
+if [ $? -eq 0 ]; then
+    echo "**** Up eth0 interface *****"
+    ifconfig eth0 192.168.1.100 netmask 255.255.255.0
+    route add default gw 192.168.101.1 eth0
+elif [ -f "/etc/wpa_supplicant.conf" ]; then
+    echo "**** Up wlan0 interface ****"
+    ifconfig wlan0 up
+    wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
+    udhcpc -i wlan0 &
+fi
+

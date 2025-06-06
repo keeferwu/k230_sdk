@@ -41,7 +41,7 @@ RUN apt-get clean all && \
     libc6-dev-i386 libncurses5:i386 libssl-dev \
     python3 python3-pip python-is-python3 \
     lib32z1 scons libncurses5-dev \
-    kmod fakeroot pigz tree doxygen gawk pkg-config libyaml-dev libconfuse2 libconfuse-dev
+    kmod fakeroot pigz tree doxygen gawk pkg-config libyaml-dev libconfuse2 libconfuse-dev bash-completion
 
 # config pip local source
 RUN echo \
