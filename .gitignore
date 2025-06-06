@@ -19,3 +19,10 @@ board/common/post_copy_rootfs/app/
 board/common/post_copy_rootfs/etc/version/
 board/common/post_copy_rootfs/lib/
 tools/tuning-tool-client/
+
+src/.src_fetched
+src/big/kmodel/
+src/big/nncase/
+src/big/utils/
+src/little/buildroot-ext/dl/
+src/little/buildroot-ext/package/tuning-server/
