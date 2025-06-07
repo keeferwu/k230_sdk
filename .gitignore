@@ -10,7 +10,6 @@ tools/kconfig/zconf.tab.c
 .config.old
 defconfig
 prepare_memory
-.last_conf
 tools/post_copy_rootfs/etc/version/
 **/__pycache__
 **/.sconsign.dblite
