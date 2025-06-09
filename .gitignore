@@ -26,6 +26,10 @@ src/big/utils/
 src/little/buildroot-ext/dl/
 src/little/buildroot-ext/package/tuning-server/
 
+.root
+compile_commands.json
+.clangd/
+
 *.o
 src/big/mpp/kernel/lib/
 src/big/mpp/userapps/lib/
