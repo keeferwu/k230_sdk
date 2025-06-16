@@ -31,6 +31,8 @@ compile_commands.json
 .clangd/
 
 *.o
+*.d
+*.o.d
 src/big/mpp/kernel/lib/
 src/big/mpp/userapps/lib/
 src/big/mpp/userapps/sample/lib/
