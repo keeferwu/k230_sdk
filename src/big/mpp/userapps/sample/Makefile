@@ -56,6 +56,7 @@ all:
 	@$(MAKE) -C sample_i2c_slave
 	@cd sample_gpio_intc; make || exit 1
 	@cd sample_hwtimer; make || exit 1
+	@cd sample_100ask; make || exit 1
 clean:
 	$(MAKE) -C tiger clean
 	$(MAKE) -C sample_gpu_cube clean
@@ -103,4 +104,5 @@ clean:
 	@$(MAKE) -C sample_i2c_slave clean
 	@cd sample_gpio_intc; make clean
 	@cd sample_hwtimer; make clean
+	@cd sample_100ask; make clean
 

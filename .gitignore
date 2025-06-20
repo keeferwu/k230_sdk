@@ -27,6 +27,7 @@ src/little/buildroot-ext/dl/
 src/little/buildroot-ext/package/tuning-server/
 
 .root
+.fdignore
 compile_commands.json
 .clangd/
 
